@@ -1,0 +1,263 @@
+* {
+
+   box-sizing: border-box;
+}
+:root {
+    --main-color: #40b65c;
+    --second-color: #0894b2;
+}
+img {
+    max-width: 100%;
+}
+body {
+    font-family: 'Assistant', sans-serif;
+    color: white;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 1240px;
+    padding: 0 50px;
+    margin-inline: auto;
+    height: 100%;
+}
+
+header {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header-logo {
+    height: 80px;
+}
+
+
+.hero-section {
+    height: 85vh;
+}
+.hero-wrp  {
+    height: 100%;
+    position: relative;
+    padding-bottom: 50px;
+}
+.hero-wrp img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+.hero-block-wrp {
+    position: absolute;    
+    bottom: 0;
+    right: -20px;
+    padding: 0 0 0 20px;
+    max-width: 50%;
+    border: 2px solid white;
+    z-index: 0;
+    bottom: 20px;
+}
+.blue {
+    position: absolute;
+    bottom: -40px;
+    height: 150px;
+    width: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--second-color);
+    z-index: -1;
+}
+.green {
+    position: absolute;
+    height: 400px;
+    width: 100px;
+    top: -90px;
+    left: -40px;
+    background-color: var(--main-color);
+    z-index: -1;
+}
+.hero-block {
+    position: relative;
+    bottom: -20px;
+    z-index: 1;
+    padding: 40px 20px;
+    background-color: var(--main-color);
+}
+h1, h2 {
+    font-weight: normal;
+    font-size: 1.5em;
+    margin: 0 0 5px;
+}
+.second-section {
+    padding-bottom: 40px;
+}
+.snd-wrp {
+    display: grid;
+    align-items: stretch;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.img-wrp {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.snd-wrp img{
+    bottom: 0;
+    width: 100%;
+    display: block;
+    position: absolute;
+    height: 100%;
+    object-fit: cover;
+    object-position: bottom;
+}
+.snd-txt {
+    color: black;
+    padding: 60px 0;
+    margin-right: -20px;
+    text-align: justify;
+}
+
+.third-section {
+    background-color: var(--main-color);
+    padding: 40px 0 95px;
+
+}
+.trd-wrp {
+    position: relative;
+    height: 100%;
+}
+.flower {
+    position: absolute;
+    bottom: -50px;
+    right: -10px;
+    opacity: 0.2;
+    width: 250px;
+    max-width: 400px;
+    z-index: 0;
+}
+.trd-top-wrp {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+}
+.trd-top-txt {
+    text-align: justify;
+}
+.trd-top-imgs {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    margin-top: -50px;
+    margin-right: -20px;
+}
+.trd-top-imgs img {
+    bottom: 0;
+    width: 100%;
+    display: block;
+    position: absolute;
+    height: 100%;
+    object-fit: cover;
+    border: 4px solid white;
+    object-position: center;
+}
+.trd-bot-wrp {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: minmax(300px,.75fr) 2fr;
+    gap: 40px;
+}
+.trd-bot-wrp img {
+    bottom: 0;
+    width: 100%;
+    display: block;
+    position: absolute;
+    height: 100%;
+    object-fit: cover;
+    border: 4px solid white;
+}
+.trd-bot-txt {
+    padding: 40px 0;
+    text-align: justify;
+    margin-right: -20px;
+}
+.wave {
+    position: relative;
+    margin-top: -75px;
+    margin-bottom: -20px;
+    height: 75px;
+    overflow: hidden;
+}
+
+.beforewave {
+    background-color: white;
+    z-index: 1;
+    bottom: 4px;
+}
+.footerwave {
+    background-color: var(--second-color);
+    z-index: 2;
+    bottom: 0;
+}
+.beforewave , .footerwave {
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    clip-path: polygon(100% 100%, 0% 100% , 0.00% 46.43%, 1.67% 47.87%, 3.33% 49.64%, 5.00% 51.47%, 6.67% 53.07%, 8.33% 54.19%, 10.00% 54.66%, 11.67% 54.40%, 13.33% 53.45%, 15.00% 51.96%, 16.67% 50.16%, 18.33% 48.34%, 20.00% 46.78%, 21.67% 45.72%, 23.33% 45.33%, 25.00% 45.67%, 26.67% 46.69%, 28.33% 48.22%, 30.00% 50.03%, 31.67% 51.84%, 33.33% 53.36%, 35.00% 54.35%, 36.67% 54.66%, 38.33% 54.25%, 40.00% 53.17%, 41.67% 51.60%, 43.33% 49.77%, 45.00% 47.98%, 46.67% 46.51%, 48.33% 45.58%, 50.00% 45.34%, 51.67% 45.83%, 53.33% 46.98%, 55.00% 48.59%, 56.67% 50.42%, 58.33% 52.19%, 60.00% 53.62%, 61.67% 54.48%, 63.33% 54.64%, 65.00% 54.07%, 66.67% 52.87%, 68.33% 51.22%, 70.00% 49.38%, 71.67% 47.64%, 73.33% 46.26%, 75.00% 45.47%, 76.67% 45.39%, 78.33% 46.03%, 80.00% 47.28%, 81.67% 48.97%, 83.33% 50.81%, 85.00% 52.53%, 86.67% 53.85%, 88.33% 54.57%, 90.00% 54.58%, 91.67% 53.87%, 93.33% 52.56%, 95.00% 50.84%, 96.67% 49.00%, 98.33% 47.31%, 100.00% 46.04%);
+}
+footer {
+    background-color: var(--second-color);
+    position: relative;
+    z-index: 3;
+    padding-bottom: 20px;
+}
+.f-wrp {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-right: -20px;
+}
+@media (max-width: 768px) {
+    .footerwave,.beforewave {
+        clip-path: polygon(100% 100%, 0% 100% , 0.00% 54.00%, 2.00% 53.93%, 4.00% 53.72%, 6.00% 53.38%, 8.00% 52.92%, 10.00% 52.35%, 12.00% 51.70%, 14.00% 50.99%, 16.00% 50.25%, 18.00% 49.50%, 20.00% 48.76%, 22.00% 48.07%, 24.00% 47.45%, 26.00% 46.92%, 28.00% 46.49%, 30.00% 46.20%, 32.00% 46.03%, 34.00% 46.01%, 36.00% 46.13%, 38.00% 46.38%, 40.00% 46.76%, 42.00% 47.26%, 44.00% 47.86%, 46.00% 48.53%, 48.00% 49.25%, 50.00% 50.00%, 52.00% 50.75%, 54.00% 51.47%, 56.00% 52.14%, 58.00% 52.74%, 60.00% 53.24%, 62.00% 53.62%, 64.00% 53.87%, 66.00% 53.99%, 68.00% 53.97%, 70.00% 53.80%, 72.00% 53.51%, 74.00% 53.08%, 76.00% 52.55%, 78.00% 51.93%, 80.00% 51.24%, 82.00% 50.50%, 84.00% 49.75%, 86.00% 49.01%, 88.00% 48.30%, 90.00% 47.65%, 92.00% 47.08%, 94.00% 46.62%, 96.00% 46.28%, 98.00% 46.07%, 100.00% 46.00%);
+    }
+    .f-wrp, .trd-bot-wrp, .trd-top-wrp, .trd-top-imgs, .snd-wrp {
+        grid-template-columns: 1fr;
+    }
+    .img-wrp img {
+        position: static;
+    }
+    .trd-bot-txt, .trd-top-imgs, .snd-txt, .hero-block-wrp {
+        padding: 0;
+        margin: 0;
+    }
+    .hero-block-wrp {
+        max-width: 100%;
+        position: static;
+        border: none;
+    }
+    .trd-top-imgs img {
+        max-height: 400px;
+        width: 100%;
+    }
+    .hero-section {
+        height: auto;
+    }
+    .hero-wrp img {
+        display: block;
+    }
+    .hero-block {
+        bottom: 0;
+        padding: 20px;
+    }
+    .container {
+        padding: 0 20px;
+    }
+    .green  {
+        height: 30vh;
+        left: -20px;
+        width: 70px;
+    }
+}
